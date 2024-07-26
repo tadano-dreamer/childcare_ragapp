@@ -37,7 +37,7 @@ txt_data = txt_loader.load()
 all_pages = pdf_data2 + txt_data
 combined_text = "\n".join([page.page_content for page in all_pages])
 
-print("\n\n資料を読み込みました。エンベディングとDB格納を開始します。\n\n")
+print("\n資料を読み込みました。エンベディングとDB格納を開始します。\n")
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=500,
@@ -61,4 +61,4 @@ qdrant = Qdrant.from_documents(
 
 retriever = qdrant.as_retriever(search_kwargs={"k": 4})
 
-print("\n\nVectorDBへの格納が完了しました！\n\n")
+print("\nVectorDBへの格納が完了しました！\n")
