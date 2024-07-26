@@ -1,6 +1,6 @@
 # 保育RAGアプリ
 ## Demos  
-＊GIFの表示に時間がかかる場合があります。
+＊GIFの表示に時間がかかる場合があります。  
 デモ1【個別記録の追加】  
 ![保育RAG_デモ1](https://github.com/user-attachments/assets/7fd2350d-b9d6-44ea-b98a-f04d195be308)
 
@@ -45,7 +45,7 @@ python ./makeplans/qdrant_load.py
 
 ### 5. サーバを起動
 ＊事前準備として：  
-　・makeplans/views.py内に2か所（雑な設計ですみません、、）APIキーを入力  
+　・makeplans/views.py内に2か所（雑設計ですが、、）APIキーを入力  
 を行う  
 
 ターミナルに以下を入力  
