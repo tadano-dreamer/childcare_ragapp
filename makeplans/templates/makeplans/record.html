@@ -1,0 +1,17 @@
+{% extends "makeplans/base.html" %}
+
+{% block body %}
+
+<h1 class="mb-4"> 個別記録の作成</h1>
+
+<form method="post" class="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-secondary ms-4">送信</button>
+</form>
+
+<div class="my-3 ms-4 font-weight-bold">
+    {% if message %}<p><strong>{{ message }}</strong></p>{% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "makeplans/base.html" %}
+
+{% block body %}
+
+<h1 class="mb-4"> 月案の作成</h1>
+
+<form method="post" name="simple_llm">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-warning ms-3">月案を作成する</button>
+</form>
+
+<div class="bg-warning-subtle text-emphasis-warning my-4">
+    {% if selected_student %}
+    <div class="ms-3 py-2">
+        <h3>{{selected_student}}の指導計画</h3>
+        {% endif %}
+        <!-- 以下、GPTの文章が生成された際に表示する -->
+        {% if monthly_plan %}
+        {{monthly_plan | linebreaks}}
+    </div>
+</div>
+
+<h4 class="mt-5"><u>5. 重大事例の検索</u></h4>
+
+<form method="post" class="mt-4">
+    {% csrf_token %}
+    {{ rag_form.as_p }}
+    <button type="submit" class="btn btn-secondary ms-3">検索する</button>
+</form>
+
+{% endif %}
+
+<div class="bg-secondary-subtle text-emphasis-secondary mt-3">
+    {% if rag_ans %}
+    <div class="ms-3 py-2">
+        <h5 class="my-2">重大事故の検索結果</h5>
+        {{rag_ans| linebreaks}}
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}
