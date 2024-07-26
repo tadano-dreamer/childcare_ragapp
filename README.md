@@ -37,7 +37,7 @@ docker run -p 6333:6333 -p 6334:6334 -v ${pwd}/qdrant_storage:/qdrant/storage qd
 
 `python ./makeplans/qdrant_load.py`  
 
-＊childcare_ragappフォルダ内にqdrant_strageフォルダが作成されます。
+＊childcare_ragappフォルダ内にqdrant_strageフォルダが作成されます  
 ＊ `localhost:6333/dashboard` でブラウザから格納データを確認可能
 
 ### 5. サーバを起動
