@@ -1,5 +1,5 @@
 # 保育RAGアプリ
-## Demo
+## Demos
 デモ1【個別記録の追加】  
 ![保育RAG_デモ1](https://github.com/user-attachments/assets/7fd2350d-b9d6-44ea-b98a-f04d195be308)
 
