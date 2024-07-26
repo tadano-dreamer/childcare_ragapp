@@ -30,23 +30,28 @@ docker run -p 6333:6333 -p 6334:6334 -v ${pwd}/qdrant_storage:/qdrant/storage qd
 ```
 
 ### 4. qdrant_web_load.pyを実行し、ベクトルDBにデータを格納する
-事前準備としてファイル内に：  
-・ファイル内にAPIキーを入力  
-・参考資料のパスを入力  
+＊事前準備としてファイル内に：  
+　・ファイル内にAPIキーを入力  
+　・参考資料のパスを入力  
 を行う  
 
-`python ./makeplans/qdrant_load.py`  
+以下をターミナルに入力
+```
+python ./makeplans/qdrant_load.py
+```
 
 ＊childcare_ragappフォルダ内にqdrant_strageフォルダが作成されます  
 ＊ `localhost:6333/dashboard` でブラウザから格納データを確認可能
 
 ### 5. サーバを起動
-また事前準備として：  
-・makeplans/views.py内に2か所（雑設計ですみません、、）APIキーを入力  
+＊事前準備として：  
+　・makeplans/views.py内に2か所（雑な設計ですみません、、）APIキーを入力  
 を行う  
 
 ターミナルに以下を入力  
-`python manage.py runserver`  
+```
+python manage.py runserver
+```
 
 `localhost:8000`でブラウザから挙動を確認
 
