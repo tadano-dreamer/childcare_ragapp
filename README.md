@@ -1,6 +1,13 @@
 # 保育RAGアプリ
+## Demo
+デモ1【個別記録の追加】  
+![保育RAG_デモ1](https://github.com/user-attachments/assets/7fd2350d-b9d6-44ea-b98a-f04d195be308)
 
-## Demo 
+デモ2【LLMによる月案（構成1-4）作成】  
+![保育RAG_デモ2](https://github.com/user-attachments/assets/005f7e17-9939-4dea-b618-152f3cb6c830)
+
+デモ3【RAGによる月案（構成5）作成】
+![保育RAG_デモ3](https://github.com/user-attachments/assets/c0bbe0fa-4241-44e3-b41e-c34965bac054)
 
 ## 起動方法
 
