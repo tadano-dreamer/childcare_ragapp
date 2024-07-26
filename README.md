@@ -6,7 +6,7 @@
 デモ2【LLMによる月案（構成1-4）作成】  
 ![保育RAG_デモ2](https://github.com/user-attachments/assets/005f7e17-9939-4dea-b618-152f3cb6c830)
 
-デモ3【RAGによる月案（構成5）作成】
+デモ3【RAGによる月案（構成5）作成】  
 ![保育RAG_デモ3](https://github.com/user-attachments/assets/bad4311b-6de8-4cbd-8843-a3f5fb01aa77)
 
 ## 起動方法
