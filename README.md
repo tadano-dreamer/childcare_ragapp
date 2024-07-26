@@ -18,7 +18,7 @@
 ### 2．必要なモジュールのインストール
 ＊仮想環境でインストールする場合は先に`python -m venv venv`をターミナルに入力  
 
--1 `cd childcare_ragapp`
+-1 `cd childcare_ragapp`  
 -2 `pip install -r requirements.txt`　（5分ほどかかります）
 
 
