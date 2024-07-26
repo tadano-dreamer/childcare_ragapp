@@ -30,7 +30,7 @@ docker run -p 6333:6333 -p 6334:6334 -v ${pwd}/qdrant_storage:/qdrant/storage qd
 ```
 
 ### 4. qdrant_web_load.pyを実行し、ベクトルDBにデータを格納する
-事前準備として：  
+事前準備としてファイル内に：  
 ・ファイル内にAPIキーを入力  
 ・参考資料のパスを入力  
 を行う  
