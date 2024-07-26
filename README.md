@@ -24,7 +24,11 @@
 
 ### 3. Qdrantを立ち上げる
 
-Dockerを利用して立ち上げます。ターミナルに以下を入力。
+Dockerを利用して立ち上げます。  
+別のターミナルに以下を入力。
+```
+cd childcare_ragapp
+```
 ```
 docker run -p 6333:6333 -p 6334:6334 -v ${pwd}/qdrant_storage:/qdrant/storage qdrant/qdrant
 ```
