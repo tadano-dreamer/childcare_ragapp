@@ -37,7 +37,7 @@ txt_data = txt_loader.load()
 all_pages = pdf_data2 + txt_data
 combined_text = "\n".join([page.page_content for page in all_pages])
 
-print("\n\npdfを読み込みました\n\n")
+print("\n\n資料を読み込みました。エンベディングとDB格納を開始します。\n\n")
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=500,
