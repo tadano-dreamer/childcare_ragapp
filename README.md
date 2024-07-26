@@ -19,11 +19,10 @@ docker run -p 6333:6333 -p 6334:6334 -v ${pwd}/qdrant_storage:/qdrant/storage qd
 ＊ `localhost:6333/dashboard` でブラウザから格納データを確認可能
 
 ### 3. サーバを起動
-ターミナルに以下を入力
-```
-python manage.py runserver
-```
+ターミナルに以下を入力  
+`python manage.py runserver`  
+`localhost:8000`でブラウザから挙動を確認
 
-また事前準備として：　　
-・makeplans/views.py内に2か所（雑設計ですみません、、）APIキーを入力　　
-を行う　　
+また事前準備として：  
+・makeplans/views.py内に2か所（雑設計ですみません、、）APIキーを入力  
+を行う  
